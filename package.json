@@ -1,0 +1,11 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "projet OpenClasrooms 4",
+  "main": "index.js",
+  "scripts": {
+    "test": "sass --watch ./sass/main.scss:./css/style.css"
+  },
+  "author": "YM",
+  "license": "ISC"
+}
