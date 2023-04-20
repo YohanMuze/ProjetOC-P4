@@ -1,0 +1,17 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    padding-left: 1rem;
+    &__indexlink {
+        width: 100px;
+    }
+    &__logo {
+        box-sizing: border-box;
+    }
+    &__link {
+        display: flex;
+        flex-direction: column;
+        color: white;
+    }
+}

@@ -1,0 +1,24 @@
+.nav {
+    width: 100%;
+    background-color: #EAEAEA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+}
+
+.welcome {
+    @include display-column;
+    background-color: #F6F6F6;
+    padding: 2rem 1rem 4rem;
+    gap: 1.5rem;
+}
+
+.functioning {
+    @include display-column;
+}
+
+.restaurants {
+    @include display-column;
+    background-color: #F6F6F6;
+}
