@@ -1,0 +1,22 @@
+.band-step {
+    @include flex;
+
+    &__link {
+        @include flex(row, initial, center);
+        width: 90%;
+        background-color: $bg-light;
+        gap: 1.5rem;
+        padding: 1.4rem 0rem;
+        border-radius: 1.5rem;
+        @include shadow
+    }
+    
+    &__number {
+        background-color: $colour-primary;
+        color: white;
+        border-radius: 1rem;
+        width: fit-content;
+        padding: 0.2rem 0.5rem;
+        margin-left: -0.8rem;
+    }
+}

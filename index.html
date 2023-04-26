@@ -3,48 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ohmyfood</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>ohmyfood</title>
+    <script src="https://kit.fontawesome.com/64cdd2c6e2.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="header">
         <img class="header__logo" src="./assets/images/ohmyfood.png" title="logo" alt="logo ohmyfood">
         <nav class="nav">
-            <i></i>
-            <p>Paris, Belleville</p>
+            <form class="form-search">
+                <i class="form-search__icon fa-solid fa-location-dot"></i>
+                <label class="form-search__label">
+                    <input class="form-search__bar" type="search" placeholder="Paris, Belleville" name="form-search">
+                </label>
+            </form>
         </nav>
     </header>
-
     <main>
         <section class="welcome">
-            <h2>Réservez le menu qui vous convient</h2>
-            <h1>Découvrez des restaurants d'exception, séléctionnés par nos soins.</h1>
-            <button>Explorer nos restaurants</button>
+            <h1 class="welcome__title">Réservez le menu qui vous convient</h2>
+            <p class="welcome__text">Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+            <a class="button-main" href="#restaurants">Explorer nos restaurants</a>
         </section>
         <section class="functioning">
-            <h2>Fonctionnement</h2>
-            <div>
-                <article>
-                    <p>1</p>
-                    <i></i>
-                    <p>Choisissez un restaurant</p>
+            <h2 class="functioning__title">Fonctionnement</h2>
+            <div class="functioning__container">
+                <article class="band-step">
+                    <a class="band-step__link" href="#">
+                        <p class="band-step__number">1</p>
+                        <i class="band-step__icon fa-solid fa-mobile-screen-button"></i>
+                        Choisissez un restaurant
+                    </a>
                 </article>
-                <article>
-                    <p>2</p>
-                    <i></i>
-                    <p>Composez votre menu</p>
+                <article class="band-step">
+                    <a class="band-step__link" href="#">
+                        <p class="band-step__number">2</p>
+                        <i class="band-step__icon fa-solid fa-list"></i>
+                        <p>Composez votre menu</p>
+                    </a>
                 </article>
-                <article>
-                    <p>3</p>
-                    <i></i>
-                    <p>Dégustez au restaurant</p>
+                <article class="band-step">
+                    <a class="band-step__link" href="#">
+                        <p class="band-step__number">3</p>
+                        <i class="band-step__icon fa-sharp fa-solid fa-store"></i>
+                        <p>Dégustez au restaurant</p>
+                    </a>
                 </article>
             </div>
         </section>
-        <section class="restaurants">
+        <section id="restaurants" class="restaurants">
             <div>
                 <h2>Restaurants</h2>
             </div>
@@ -104,7 +114,7 @@
     </main>   
     <footer class="footer">
         <a class="footer__indexlink" href="index.html"><img class="footer__logo" src="./assets/images/ohmyfood.png" title="accueil" alt="logo ohmyfood cliquable pour revenir à l'accueil"></a>
-        <div>
+        <div class="footer__content">
             <a class="footer__link" href="#"><i></i>Proposer un restaurant</a>
             <a class="footer__link" href="#"><i></i>Devenir partenaire</a>
             <a class="footer__link" href="#">Mentions légales</a>

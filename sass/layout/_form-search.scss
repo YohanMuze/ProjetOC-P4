@@ -1,0 +1,12 @@
+.form-search {
+    margin-left: 2.5rem;
+    .form-search__bar {
+        @include input-search;
+        background-color: #EAEAEA;
+        padding-left: 3rem;
+    }
+    &__icon {
+        position: sticky;
+        margin-right: -2.5rem;
+    }    
+}

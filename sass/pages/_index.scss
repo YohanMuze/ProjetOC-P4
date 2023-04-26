@@ -1,24 +1,39 @@
 .nav {
+    @include flex;
     width: 100%;
-    background-color: #EAEAEA;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: $bg-medium;
     height: 4rem;
+    box-shadow: inset 0rem 0.1rem 0.1rem rgb(0, 0, 0, 0.12)
 }
 
 .welcome {
-    @include display-column;
-    background-color: #F6F6F6;
+    @include flex;
+    background-color: $bg-light;
     padding: 2rem 1rem 4rem;
     gap: 1.5rem;
+    text-align: center;
+    &__title {
+
+    }
+    &__text {
+
+    }
 }
 
 .functioning {
-    @include display-column;
+    @include flex(column, initial, initial);
+    margin-bottom: 5rem;
+    &__title {
+        padding: 3rem 1rem 1.5rem;
+    }
+    &__container {
+        @include flex (column, initial, initial);
+        width: 100%;
+        gap: 1.8rem;
+    }
 }
 
 .restaurants {
-    @include display-column;
-    background-color: #F6F6F6;
+    @include flex;
+    background-color: $bg-light;
 }

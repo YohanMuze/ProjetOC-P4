@@ -1,5 +1,5 @@
 .header {
-    @include display-column;
+    @include flex;
     gap: 1.5rem;
     &__logo {
         max-width: 200px;
