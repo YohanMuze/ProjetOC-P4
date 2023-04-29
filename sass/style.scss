@@ -5,11 +5,11 @@
 @import "./base/base";
 @import "./base/typography";
 
-@import "./components/button-main";
-@import "./components/band-step";
+@import "./components/buttons";
+@import "./components/cards";
 
 @import "./layout/header";
-@import "./layout/form-search";
+@import "./layout/form";
 @import "./layout/footer";
 
 @import "./pages/index";

@@ -9,3 +9,15 @@ a {
     text-decoration: none;
     color: black;
 }
+
+img {
+    object-fit: cover;
+}
+
+button {
+    border: none;
+    background-color: white;
+    &:hover {
+        background-color: white;
+    }
+}

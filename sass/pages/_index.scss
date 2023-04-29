@@ -12,28 +12,64 @@
     padding: 2rem 1rem 4rem;
     gap: 1.5rem;
     text-align: center;
-    &__title {
+   /* &__title {
 
     }
     &__text {
 
-    }
+    } */
 }
 
 .functioning {
-    @include flex(column, initial, initial);
-    margin-bottom: 5rem;
+    @include flex(column, center, center);
+    &__section {
+        @include flex(column, initial, initial);
+        max-width: 1000px;
+        width: 90%;
+        margin-bottom: 5rem;
+    }
     &__title {
-        padding: 3rem 1rem 1.5rem;
+        padding: 3rem 0rem 1.5rem;
+        @include desktop-only {
+            padding: 3rem 0rem 1.5rem;
+        }
     }
     &__container {
         @include flex (column, initial, initial);
-        width: 100%;
         gap: 1.8rem;
+        @include desktop-only {
+            flex-direction: row;
+        }
     }
 }
 
 .restaurants {
     @include flex;
     background-color: $bg-light;
+    &__section {
+        display: grid;
+        grid-template-columns: 1fr;
+        background-color: $bg-light;
+        padding-bottom: 5rem;
+        width: 90%;
+        max-width: 1000px;
+    }
+    &__title {
+        margin: 4rem 0rem 1.7rem ; 
+    }
+    &__content {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        gap: 2rem;
+        @include tablet-only {
+            grid-template-columns: 1fr 1fr;
+            grid-column-gap: 3rem;
+        }
+        @include desktop-only {
+            grid-column-gap: 6rem;
+            grid-row-gap: 3rem;
+        }
+    }
+    
 }

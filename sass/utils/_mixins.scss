@@ -18,8 +18,14 @@
     box-shadow: rgba(0, 0, 0, 0.15) 0rem 0.2rem 0.4rem 0.1rem;
 }
 
-@mixin mobile-only {
-    @media screen and ({
+@mixin tablet-only {
+    @media screen and (min-width: map-get($breakpoints, tablets)){
         @content;    
+    }
+}
+
+@mixin desktop-only {
+    @media screen and (min-width: map-get($breakpoints, desktop)) {
+        @content;
     }
 }
