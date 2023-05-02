@@ -1,6 +1,6 @@
 .card-step {
     @include flex(column, normal, normal);
-
+    
     &__link {
         @include flex(row, initial, center);
         background-color: $bg-light;
@@ -11,7 +11,8 @@
         @include shadow;
         @include desktop-only {
             width: max-content;
-            padding-right: 3rem;
+            padding-right: 2rem;
+            margin: 0;
         }
     }
     
@@ -23,6 +24,13 @@
         padding: 0.2rem 0.5rem;
         margin-left: -0.8rem;
     }
+    &__icon {
+        color: #7E7E7E;
+        &:hover {
+            color: $colour-primary
+        }
+        
+    }
 }
 
 .card-restaurants {
@@ -31,7 +39,9 @@
     width: 100%;
     border-radius: 1rem;
     &__link {
+        position: relative;
         width: 100%;
+        height: 100%;
     }
     &__img {
         width: 100%;
@@ -40,6 +50,23 @@
     }
     &__content {
         @include flex(row, space-between, center);
-        padding: 0.5rem;
+        padding: 1rem;
+        & h3 {
+            padding-bottom: 0.4rem;
+        }
+    }
+}
+
+.card-new {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    & p {
+        position: absolute;
+        background-color: #99E2D0;
+        color: #008766;
+        right: 5%;
+        top: 5%;
+        padding: 0.3rem;
     }
 }

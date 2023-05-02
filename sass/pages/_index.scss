@@ -12,12 +12,13 @@
     padding: 2rem 1rem 4rem;
     gap: 1.5rem;
     text-align: center;
-   /* &__title {
-
+    &__title {
+        font-size: xx-large;
+        font-weight: 800;
     }
     &__text {
-
-    } */
+        font-size: large;
+    } 
 }
 
 .functioning {
@@ -26,7 +27,7 @@
         @include flex(column, initial, initial);
         max-width: 1000px;
         width: 90%;
-        margin-bottom: 5rem;
+        margin-bottom: 4rem;
     }
     &__title {
         padding: 3rem 0rem 1.5rem;
@@ -36,9 +37,10 @@
     }
     &__container {
         @include flex (column, initial, initial);
-        gap: 1.8rem;
+        gap: 3rem;
         @include desktop-only {
             flex-direction: row;
+            justify-content: space-around;
         }
     }
 }
@@ -50,12 +52,12 @@
         display: grid;
         grid-template-columns: 1fr;
         background-color: $bg-light;
-        padding-bottom: 5rem;
         width: 90%;
         max-width: 1000px;
+        margin-bottom: 3.5rem;
     }
     &__title {
-        margin: 4rem 0rem 1.7rem ; 
+        margin: 3rem 0rem 1.7rem ; 
     }
     &__content {
         display: grid;

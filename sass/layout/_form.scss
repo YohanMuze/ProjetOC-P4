@@ -4,6 +4,9 @@
         @include input-search;
         background-color: #EAEAEA;
         padding-left: 3rem;
+        &:focus-visible {
+            outline: black solid 0.1rem;
+        }
     }
     &__icon {
         position: sticky;

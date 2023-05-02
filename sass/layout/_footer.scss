@@ -1,18 +1,38 @@
 .footer {
     @include flex(column, initial, normal);
     background-color: $bg-dark;
+    height: fit-content;
     padding-left: 1rem;
+    @include desktop-only {
+        flex-direction: row-reverse;
+        gap: 5rem;
+        padding: 3rem 3rem 1.5rem 3rem;
+    }
     &__indexlink {
         width: 100px;
     }
     &__logo {
         max-width: 100%;
+        filter: invert(1);
+        padding: 1.5rem 0rem 1rem;
+    }
+    &__maincontent, &__content {
+        @include flex(column, initial, flex-start);
+        gap: 0.7rem;
+        @include desktop-only {
+            flex-direction: row;
+            align-items: center;
+            gap: 3rem;
+        }
     }
     &__content {
-        @include flex(column, initial, flex-start)
+        @include desktop-only {
+            gap: 0.8rem;
+        }
     }
     &__link {
-        @include flex(column);
+        @include flex(row);
+        gap: 0.5rem;
         color: white;
     }
 }
