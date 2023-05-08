@@ -1,0 +1,54 @@
+.main-restaurant {
+    @include flex(column, normal, center);
+    width: 100%;
+}
+
+
+.main-content {
+    @include flex(column, normal, center);
+    max-width: 1000px;
+    width: 100%;
+    min-height: 100%;
+    background-color: $bg-light;
+    border-radius: 2rem 2rem 0 0;
+    position: relative;
+}
+
+.menu {
+    @include flex(column, center, normal);
+    width: 90%;
+    padding: 2rem 0 2rem 0;
+    gap: 2rem;
+    
+    @include tablet-only {
+        width: 60%;
+    }
+    &__title {
+        @include flex(row, space-between, center);
+        font-family: 'Shrikhand', cursive;
+        font-weight: 300;
+        @include tablet-only {
+            justify-content: center;
+            gap: 2rem;
+        }
+    }
+    &__part {
+        @include flex(column, normal, normal);
+        gap: 0.5rem;
+        & h2 {
+            font-size: medium;
+            font-weight: 400;
+            margin: 0.5rem 0rem;
+            padding: 0 0.5rem 0.5rem 0;
+            border-bottom: 3px solid #99E2D0;
+            width: 2.6rem;
+        }
+    }
+    &__cards {
+        @include flex(column, normal, normal);
+        gap: 1rem;
+    }
+    &__btn {
+        @include flex(column, center, center)
+    }
+}

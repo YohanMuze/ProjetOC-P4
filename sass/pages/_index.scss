@@ -1,4 +1,8 @@
-.nav {
+.main-index {
+        @include flex(column, normal, normal)
+}
+
+.nav-index {
     @include flex;
     width: 100%;
     background-color: $bg-medium;

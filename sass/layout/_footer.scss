@@ -3,6 +3,7 @@
     background-color: $bg-dark;
     height: fit-content;
     padding-left: 1rem;
+    padding-bottom: 1.5rem;
     @include desktop-only {
         flex-direction: row-reverse;
         gap: 5rem;

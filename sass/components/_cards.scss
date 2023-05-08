@@ -70,3 +70,21 @@
         padding: 0.3rem;
     }
 }
+
+.card-dish {
+    @include flex(row, space-between, normal);
+    background-color: white;
+    border-radius: 1rem;
+    padding: 0.8rem 1rem;
+    @include shadow;
+    &__title {
+        font-size: large; 
+    }
+    &__content {
+        @include flex (column, space-between, normal);
+        gap: 0.4rem;
+    }
+    &__price {
+        @include flex (row, normal, flex-end);
+    }
+}

@@ -1,12 +1,12 @@
 .btn-main {
     background: linear-gradient(to bottom, $colour-secondary, $colour-primary);
     color: white;
+    width: max-content;
     padding: 1rem 1.5rem;
     border-radius: 2rem;
     @include shadow;
-}
-
-.btn-like {
-    width: fit-content;
-    height: fit-content;
+    &--larger {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
 }
