@@ -6,12 +6,17 @@ $bg-light:#F6F6F6;
 $bg-medium:#EAEAEA;
 $bg-dark:#353535;
 
-
-
 /****** map ******/
 
 $breakpoints: (
     tablets: 690px,
     desktop: 990px,
     desktop-xl: 1400px
+);
+
+$duration: (
+    first: 700ms,
+    second: 1000ms,
+    third: 1400ms,
+    fourth: 1800ms
 );

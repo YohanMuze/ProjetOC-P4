@@ -4,7 +4,12 @@
     width: max-content;
     padding: 1rem 1.5rem;
     border-radius: 2rem;
-    @include shadow;
+    @include shadow-light;
+    &:hover {
+        filter: brightness(1.05);
+        @include shadow-medium;
+        cursor: pointer;
+    }
     &--larger {
         padding-left: 3rem;
         padding-right: 3rem;

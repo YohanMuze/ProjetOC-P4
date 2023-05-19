@@ -16,10 +16,9 @@
 
 .menu {
     @include flex(column, center, normal);
-    width: 90%;
+    width: 95%;
     padding: 2rem 0 2rem 0;
     gap: 2rem;
-    
     @include tablet-only {
         width: 60%;
     }
@@ -27,7 +26,10 @@
         @include flex(row, space-between, center);
         font-family: 'Shrikhand', cursive;
         font-weight: 300;
+        max-width: 95%;
+        padding: 0.5rem;
         @include tablet-only {
+            max-width: 100%;
             justify-content: center;
             gap: 2rem;
         }
@@ -35,6 +37,8 @@
     &__part {
         @include flex(column, normal, normal);
         gap: 0.5rem;
+        padding: 0.5rem;
+        overflow: hidden;
         & h2 {
             font-size: medium;
             font-weight: 400;
@@ -51,4 +55,21 @@
     &__btn {
         @include flex(column, center, center)
     }
+}
+
+
+.duration1 {
+    animation-duration:map-get($duration, first)
+}
+
+.duration2 {
+    animation-duration: map-get($duration, second);
+}
+
+.duration3 {
+    animation-duration: map-get($duration, third);
+}
+
+.duration4 {
+    animation-duration: map-get($duration, fourth);
 }

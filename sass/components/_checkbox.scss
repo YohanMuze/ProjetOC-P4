@@ -1,0 +1,21 @@
+.checkbox {
+    @include flex(row, center, center);
+    background-color: $colour-tertiary;
+    border-radius: 0 1rem 1rem 0;
+    width: 0px;
+    height: 100%;
+    transition: width 800ms;
+    &__input {
+        appearance: none;
+    }
+    &__icon {
+        border-radius: 1rem;
+        color: $colour-tertiary;
+        background-color: white;
+        padding: 0.3rem;
+        opacity: 0;
+    }
+    & .fa-lg {
+        line-height: 1rem;
+    }
+}

@@ -1,0 +1,25 @@
+.heart {
+    &__on {
+        background: linear-gradient(to bottom, $colour-primary, $colour-secondary);
+        background-clip: text;
+        color: transparent;
+        opacity: 0;
+        transition: opacity 800ms;
+        &:hover {
+            opacity: 1;
+        }
+    }
+    &__off {
+        opacity: 1;
+        transition: opacity 800ms;
+        &:hover {
+            opacity: 0;
+        }
+    }
+    &--margin-card {
+        margin-left: -1.25rem;
+    }
+    &--margin-menu {
+        margin-left: -1.8rem;
+    }
+}

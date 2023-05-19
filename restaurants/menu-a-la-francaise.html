@@ -25,43 +25,54 @@
     <main class="main-restaurant">
         <div class="main-content">
             <section class="menu">
-                <h1 class="menu__title">À la française<i class="fa-regular fa-heart"></i></h1>
+                <h1 class="menu__title">À la française
+                    <span class="heart">
+                        <i class="heart__off fa-regular fa-heart"></i>
+                        <i class="heart__on heart--margin-menu fa-solid fa-heart"></i>
+                    </span>
+                </h1>
                 <div class="menu__part">
                     <h2>ENTRÉES</h2>
                     <div class="menu__cards">
-                        <article class="card-dish">
+                        <article class="card-dish duration1">
                             <div class="card-dish__content">
                                 <h3 class="card-dish__title">Tartare de poulpe acidulé</h3>
-                                <p>Aux zestes d'orange</p>
+                                <p class="card-dish__text">Aux zestes d'orange</p>
                             </div>
-                            <div class="card-dish__price">
-                                <p class="euro">25<span class="euro">€</span></p>
-                                <div>
-                                    <input class="checkbox-order" type="checkbox" name="order" value="poulpe">
+                            <div class="card-dish__content-second">
+                                <div class="card-dish__price">
+                                    <p class="euro">25<span class="euro">€</span></p>
+                                </div>
+                                <div class="checkbox">
+                                    <i class="checkbox__icon fa-lg fa-solid fa-check"><input class="checkbox__input" type="checkbox" name="order" value="poulpe"></i>
                                 </div>
                             </div>
                         </article>
-                        <article class="card-dish">
+                        <article class="card-dish duration2">
                             <div class="card-dish__content">
                                 <h3 class="card-dish__title">Velouté de légumes d'antan</h3>
-                                <p>Carotte, panais, topinambour</p>
+                                <p class="card-dish__text">Carotte, panais, topinambour</p>
                             </div>
-                            <div class="card-dish__price">
-                                <p class="euro">35<span class="euro">€</span></p>
-                                <div>
-                                    <input class="checkbox-order" type="checkbox" name="order" value="veloute">
+                            <div class="card-dish__content-second">
+                                <div class="card-dish__price">
+                                    <p class="euro">35<span class="euro">€</span></p>
+                                </div>
+                                <div class="checkbox">
+                                    <i class="checkbox__icon fa-lg fa-solid fa-check"><input class="checkbox__input" type="checkbox" name="order" value="veloute"></i>
                                 </div>
                             </div>
                         </article>
-                        <article class="card-dish">
+                        <article class="card-dish duration3">
                             <div class="card-dish__content">
                                 <h3 class="card-dish__title">Soupe à l'oignon</h3>
-                                <p>Revisitée</p>
+                                <p class="card-dish__text">Revisitée</p>
                             </div>
-                            <div class="card-dish__price">
-                                <p class="euro">20<span class="euro">€</span></p>
-                                <div>
-                                    <input class="checkbox-order" type="checkbox" name="order" value="soupe">
+                            <div class="card-dish__content-second">
+                                <div class="card-dish__price">
+                                    <p class="euro">20<span class="euro">€</span></p>
+                                </div>
+                                <div class="checkbox">
+                                    <i class="checkbox__icon fa-lg fa-solid fa-check"><input class="checkbox__input" type="checkbox" name="order" value="soupe"></i>
                                 </div>
                             </div>
                         </article>
@@ -70,39 +81,45 @@
                 <div class="menu__part">
                     <h2>PLATS</h2>
                     <div class="menu__cards">
-                        <article class="card-dish">
+                        <article class="card-dish duration1">
                             <div class="card-dish__content">
                                 <h3 class="card-dish__title">Coquilles Saint-Jacques</h3>
-                                <p>Accompagnées d'une purée de panais</p>
+                                <p class="card-dish__text">Accompagnées d'une purée de panais</p>
                             </div>
-                            <div class="card-dish__price">
-                                <p class="euro">40<span class="euro">€</span></p>
-                                <div>
-                                    <input class="checkbox-order" type="checkbox" name="order" value="saint-jacques">
+                            <div class="card-dish__content-second">
+                                <div class="card-dish__price">
+                                    <p class="euro">40<span class="euro">€</span></p>
+                                </div>
+                                <div class="checkbox">
+                                    <i class="checkbox__icon fa-lg fa-solid fa-check"><input class="checkbox__input" type="checkbox" name="order" value="saint-jacques"></i>
                                 </div>
                             </div>
                         </article>
-                        <article class="card-dish">
+                        <article class="card-dish duration2">
                             <div class="card-dish__content">
                                 <h3 class="card-dish__title">Magret de canard</h3>
-                                <p>Et parmentier de pommes de terre</p>
+                                <p class="card-dish__text">Et parmentier de pommes de terre</p>
                             </div>
-                            <div class="card-dish__price">
-                                <p class="euro">35<span class="euro">€</span></p>
-                                <div>
-                                    <input class="checkbox-order" type="checkbox" name="order" value="canard">
+                            <div class="card-dish__content-second">
+                                <div class="card-dish__price">
+                                    <p class="euro">35<span class="euro">€</span></p>
+                                </div>
+                                <div class="checkbox">
+                                    <i class="checkbox__icon fa-lg fa-solid fa-check"><input class="checkbox__input" type="checkbox" name="order" value="canard"></i>
                                 </div>
                             </div>
                         </article>
-                        <article class="card-dish">
+                        <article class="card-dish duration3">
                             <div class="card-dish__content">
                                 <h3 class="card-dish__title">Pigeonneau d’Ille-et-Vilaine</h3>
-                                <p>Sur son lit de gnocchis aux légumes</p>
+                                <p class="card-dish__text">Sur son lit de gnocchis aux légumes</p>
                             </div>
-                            <div class="card-dish__price">
-                                <p class="euro">44<span class="euro">€</span></p>
-                                <div>
-                                    <input class="checkbox-order" type="checkbox" name="order" value="pigeonneau">
+                            <div class="card-dish__content-second">
+                                <div class="card-dish__price">
+                                    <p class="euro">44<span class="euro">€</span></p>
+                                </div>
+                                <div class="checkbox">
+                                    <i class="checkbox__icon fa-lg fa-solid fa-check"><input class="checkbox__input" type="checkbox" name="order" value="pigeonneau"></i>
                                 </div>
                             </div>
                         </article>
@@ -111,39 +128,45 @@
                 <div class="menu__part">
                     <h2>DESSERTS</h2>
                     <div class="menu__cards">
-                        <article class="card-dish">
+                        <article class="card-dish duration1">
                             <div class="card-dish__content">
                                 <h3 class="card-dish__title">Pétales de violettes glacés</h3>
-                                <p>Et purée de noisettes</p>
+                                <p class="card-dish__text">Et purée de noisettes</p>
                             </div>
-                            <div class="card-dish__price">
-                                <p class="euro">18<span class="euro">€</span></p>
-                                <div>
-                                    <input class="checkbox-order" type="checkbox" name="order" value="violette">
+                            <div class="card-dish__content-second">
+                                <div class="card-dish__price">
+                                    <p class="euro">18<span class="euro">€</span></p>
+                                </div>
+                                <div class="checkbox">
+                                    <i class="checkbox__icon fa-lg fa-solid fa-check"><input class="checkbox__input" type="checkbox" name="order" value="violette"></i>
                                 </div>
                             </div>
                         </article>
-                        <article class="card-dish">
+                        <article class="card-dish duration2">
                             <div class="card-dish__content">
                                 <h3 class="card-dish__title">Fondant au chocolat</h3>
-                                <p>Revisité</p>
+                                <p class="card-dish__text">Revisité</p>
                             </div>
-                            <div class="card-dish__price">
-                                <p class="euro">22<span class="euro">€</span></p>
-                                <div>
-                                    <input class="checkbox-order" type="checkbox" name="order" value="fondant">
+                            <div class="card-dish__content-second">
+                                <div class="card-dish__price">
+                                    <p class="euro">22<span class="euro">€</span></p>
+                                </div>
+                                <div class="checkbox">
+                                    <i class="checkbox__icon fa-lg fa-solid fa-check"><input class="checkbox__input" type="checkbox" name="order" value="fondant"></i>
                                 </div>
                             </div>
                         </article>
-                        <article class="card-dish">
+                        <article class="card-dish duration3">
                             <div class="card-dish__content">
                                 <h3 class="card-dish__title">Millefeuille croustillant</h3>
-                                <p>Myrtilles et pâte d’amande</p>
+                                <p class="card-dish__text">Myrtilles et pâte d’amande</p>
                             </div>
-                            <div class="card-dish__price">
-                                <p class="euro">23<span class="euro">€</span></p>
-                                <div>
-                                    <input class="checkbox-order" type="checkbox" name="order" value="millefeuille">
+                            <div class="card-dish__content-second">
+                                <div class="card-dish__price">
+                                    <p class="euro">23<span class="euro">€</span></p>
+                                </div>
+                                <div class="checkbox">
+                                    <i class="checkbox__icon fa-lg fa-solid fa-check"><input class="checkbox__input" type="checkbox" name="order" value="millefeuille"></i>
                                 </div>
                             </div>
                         </article>
