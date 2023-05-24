@@ -1,25 +1,30 @@
 .heart {
+    display: inline-block;
+    &:hover &__on {
+        opacity: 1;
+    }
+    &:hover &__off {
+        opacity: 0;
+    }
     &__on {
         background: linear-gradient(to bottom, $colour-primary, $colour-secondary);
         background-clip: text;
         color: transparent;
         opacity: 0;
         transition: opacity 800ms;
-        &:hover {
-            opacity: 1;
-        }
     }
     &__off {
         opacity: 1;
-        transition: opacity 800ms;
-        &:hover {
-            opacity: 0;
-        }
+        transition: opacity 700ms;
     }
     &--margin-card {
-        margin-left: -1.25rem;
+        margin-left: -1.2rem;
     }
     &--margin-menu {
         margin-left: -1.8rem;
     }
+}
+
+.heart .heart__on {
+    display: inline;
 }

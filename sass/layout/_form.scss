@@ -4,6 +4,7 @@
         @include input-search;
         background-color: #EAEAEA;
         padding-left: 3rem;
+        font-weight: 600;
         &:focus-visible {
             outline: black solid 0.1rem;
         }

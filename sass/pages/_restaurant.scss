@@ -23,7 +23,7 @@
         width: 60%;
     }
     &__title {
-        @include flex(row, space-between, center);
+        @include flex(row, space-between, normal);
         font-family: 'Shrikhand', cursive;
         font-weight: 300;
         max-width: 95%;

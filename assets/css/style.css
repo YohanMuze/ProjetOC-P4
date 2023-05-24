@@ -109,7 +109,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: normal;
   background-color: white;
   width: 100%;
   border-radius: 1rem;
@@ -241,6 +241,15 @@ body {
   line-height: 1rem;
 }
 
+.heart {
+  display: inline-block;
+}
+.heart:hover .heart__on {
+  opacity: 1;
+}
+.heart:hover .heart__off {
+  opacity: 0;
+}
 .heart__on {
   background: linear-gradient(to bottom, #9356DC, #FF79DA);
   -webkit-background-clip: text;
@@ -249,21 +258,19 @@ body {
   opacity: 0;
   transition: opacity 800ms;
 }
-.heart__on:hover {
-  opacity: 1;
-}
 .heart__off {
   opacity: 1;
-  transition: opacity 800ms;
-}
-.heart__off:hover {
-  opacity: 0;
+  transition: opacity 700ms;
 }
 .heart--margin-card {
-  margin-left: -1.25rem;
+  margin-left: -1.2rem;
 }
 .heart--margin-menu {
   margin-left: -1.8rem;
+}
+
+.heart .heart__on {
+  display: inline;
 }
 
 .loader {
@@ -390,6 +397,7 @@ body {
   color: black;
   background-color: #EAEAEA;
   padding-left: 3rem;
+  font-weight: 600;
 }
 .form-search .form-search__bar::-moz-placeholder {
   color: black;
@@ -610,7 +618,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: normal;
   font-family: "Shrikhand", cursive;
   font-weight: 300;
   max-width: 95%;
