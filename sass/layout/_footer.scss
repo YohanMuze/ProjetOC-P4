@@ -4,7 +4,7 @@
     height: fit-content;
     padding-left: 1rem;
     padding-bottom: 1.5rem;
-    @include desktop-only {
+    @include desktop-min {
         flex-direction: row-reverse;
         gap: 5rem;
         padding: 3rem 3rem 1.5rem 3rem;
@@ -20,14 +20,14 @@
     &__maincontent, &__content {
         @include flex(column, initial, flex-start);
         gap: 0.7rem;
-        @include desktop-only {
+        @include desktop-min {
             flex-direction: row;
             align-items: center;
             gap: 3rem;
         }
     }
     &__content {
-        @include desktop-only {
+        @include desktop-min {
             gap: 0.8rem;
         }
     }

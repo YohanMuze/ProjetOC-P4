@@ -11,7 +11,7 @@
         margin-left: 1rem;
         border-radius: 1.5rem;
         @include shadow-light;
-        @include desktop-only {
+        @include desktop-min {
             width: max-content;
             padding-right: 2rem;
             margin: 0;
@@ -35,6 +35,9 @@
     background-color: white;
     width: 100%;
     border-radius: 1rem;
+    &:hover {
+        @include shadow-medium;
+    }
     &__link {
         position: relative;
         width: 100%;

@@ -17,9 +17,9 @@
 .menu {
     @include flex(column, center, normal);
     width: 95%;
-    padding: 2rem 0 2rem 0;
-    gap: 2rem;
-    @include tablet-only {
+    padding: 1.5rem 0 2.5rem 0;
+    gap: 1.5rem;
+    @include tablet-min {
         width: 60%;
     }
     &__title {
@@ -28,7 +28,7 @@
         font-weight: 300;
         max-width: 95%;
         padding: 0.5rem;
-        @include tablet-only {
+        @include tablet-min {
             max-width: 100%;
             justify-content: center;
             gap: 2rem;

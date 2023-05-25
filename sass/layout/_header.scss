@@ -1,18 +1,30 @@
 .header {
     @include flex;
-    &--gap {
-        gap: 1.5rem;
+    &__band {
+        @include flex(row);
+        background-color: white;
+        width: 100%;
+        padding-top: 1.7rem;
     }
     &__logo {
         max-width: 200px;
-        padding-top: 1.5rem;
+        margin-left: -2rem;
+    }
+    &--gap {
+        gap: 1.5rem;
+    }
+    &--absolute {
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        padding-bottom: 1.7rem;
     }
 }
 
 .nav {
     position: absolute;
     top: 2rem;
-    left: 2rem;
+    left: 1.5rem;
 }
 
 .hero {
@@ -23,15 +35,15 @@
     top: 2rem;
     &__img {
         min-width: 100%;
-        max-height: 15rem;
-        @include tablet-only {
-            max-height: 25rem;
+        max-height: 16rem;
+        @include tablet-min {
+            max-height: 20rem;
         }
-        @include desktop-only {
-            max-height: 30rem;
+        @include desktop-min {
+            max-height: 24rem;
         }
-        @include desktop-xl {
-            max-height: 40rem;
+        @include desktop-xl-min {
+            max-height: 28rem;
         }
     }
 }

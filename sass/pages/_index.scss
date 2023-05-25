@@ -35,14 +35,14 @@
     }
     &__title {
         padding: 3rem 0rem 1.5rem;
-        @include desktop-only {
+        @include desktop-min {
             padding: 3rem 0rem 1.5rem;
         }
     }
     &__container {
         @include flex (column, initial, initial);
         gap: 3rem;
-        @include desktop-only {
+        @include desktop-min {
             flex-direction: row;
             justify-content: space-around;
         }
@@ -68,11 +68,11 @@
         grid-template-columns: 1fr;
         width: 100%;
         gap: 2rem;
-        @include tablet-only {
+        @include tablet-min {
             grid-template-columns: 1fr 1fr;
             grid-column-gap: 3rem;
         }
-        @include desktop-only {
+        @include desktop-min {
             grid-column-gap: 6rem;
             grid-row-gap: 3rem;
         }

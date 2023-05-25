@@ -30,19 +30,19 @@
 
 
 /******** Media Querries *******/
-@mixin tablet-only {
-    @media screen and (min-width: map-get($breakpoints, tablets)){
+@mixin tablet-min {
+    @media screen and (min-width: map-get($breakpoints, tablet)){
         @content;    
     }
 }
 
-@mixin desktop-only {
+@mixin desktop-min {
     @media screen and (min-width: map-get($breakpoints, desktop)) {
         @content;
     }
 }
 
-@mixin desktop-xl {
+@mixin desktop-xl-min {
     @media screen and (min-width: map-get($breakpoints, desktop-xl)) {
         @content;    
     }
