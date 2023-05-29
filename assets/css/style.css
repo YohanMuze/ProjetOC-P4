@@ -355,7 +355,6 @@ body {
 }
 .header__logo {
   max-width: 200px;
-  margin-left: -2rem;
 }
 .header--gap {
   gap: 1.5rem;
